@@ -1,6 +1,6 @@
 {
   "name": "react-enframr",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "A MERN boilerplate CLI tool",
   "main": "index.js",
   "repository": "https://github.com/rabidpug/react-enframr.git",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.14.3"
   }
 }

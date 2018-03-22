@@ -86,9 +86,9 @@ function installModules(config) {
   installer.on('close', code => {
     code === 0
       ? console.log(
-          `...completed.\nTime to:\ncd ${config.path} && ${config.manager} init\n${
+          `...completed.\nTime to:\ncd ${config.path} && git init && ${config.manager} init\n${
             config.manager === 'npm' ? 'npm run' : 'yarn'
-          } dev to start developing.\nDon't forget to git init and set up heroku, travis and coveralls. Refer to ENFRAMR.md for more info`,
+          } dev to start developing.\nDon't forget to link heroku, travis and coveralls to your repo. Refer to ENFRAMR.md for more info`,
         )
       : console.log('Shit, something fucked up');
   });
@@ -137,8 +137,9 @@ function initBP(name) {
 }
 
 program
-  .version('0.1.5')
-  .command('new <name>')
+  .version('0.1.7')
+  .command('create <name>')
+  .alias('c')
   .option('-c, --config', 'Customise package manager and project parent folder')
   .action((name, cmd) => {
     const isValid = validateProjectName(name);
