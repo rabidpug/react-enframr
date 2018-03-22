@@ -137,10 +137,10 @@ function initBP(name) {
 }
 
 program
-  .version('0.1.7')
-  .command('create <name>')
-  .alias('c')
-  .option('-c, --config', 'Customise package manager and project parent folder')
+  .version('0.1.8')
+  .arguments('<name>')
+  .description('enter the name of the project you want to generate')
+  .option('-c, --config', 'Customise package options for the project')
   .action((name, cmd) => {
     const isValid = validateProjectName(name);
     if (isValid === true) {

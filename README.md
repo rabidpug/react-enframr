@@ -17,10 +17,8 @@ Heroku, Travis CI and Coveralls ready. Just git init, push and link your repo to
 Create a project:
 
 ```shell
-projects-dir> enframr create <project-name> [--config | -c]
+projects-dir> enframr <project-name> [--config | -c]
 ```
-
-create can be used with the alias c
 
 Configuration options are currently NPM/React and alternate projects folder to create your project in.
 
