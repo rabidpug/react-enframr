@@ -1,0 +1,5 @@
+/.npmignore
+*.log
+*.lock
+/node_modules
+/build

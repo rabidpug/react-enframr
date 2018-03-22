@@ -1,0 +1,17 @@
+[ignore]
+.*/node_modules/editions/es2015/.*
+[options]
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
+; Extensions
+module.file_ext=.js
+module.file_ext=.css
+module.file_ext=.scss
+module.name_mapper='^Assets/\(.*\)$' -> '<PROJECT_ROOT>/src/client/assets/\1'
+module.name_mapper='^Shared/\(.*\)$' -> '<PROJECT_ROOT>/src/shared/\1'
+module.name_mapper='^Server/\(.*\)$' -> '<PROJECT_ROOT>/src/server/\1'
+module.name_mapper='^Store/\(.*\)$' -> '<PROJECT_ROOT>/src/client/store/\1'
+module.name_mapper='^Scenes/\(.*\)$' -> '<PROJECT_ROOT>/src/client/scenes/\1'
+module.name_mapper='^Routes/\(.*\)$' -> '<PROJECT_ROOT>/src/client/routes/\1'
+module.name_mapper='^Containers/\(.*\)$' -> '<PROJECT_ROOT>/src/client/containers/\1'
+module.name_mapper='^Components/\(.*\)$' -> '<PROJECT_ROOT>/src/client/components/\1'
+module.name_mapper='^Client/\(.*\)$' -> '<PROJECT_ROOT>/src/client/\1'

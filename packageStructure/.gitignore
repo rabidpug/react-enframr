@@ -1,0 +1,11 @@
+#Node
+
+node_modules/
+
+#project
+coverage/
+dist/
+*.code-workspace
+*.log
+/.env
+*.scss.flow

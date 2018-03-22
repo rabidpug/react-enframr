@@ -1,0 +1,18 @@
+{
+  "presets": [["env", { "modules": false }], "stage-0", "react", "flow"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-decorators-legacy",
+    ["import", { "libraryName": "antd", "style": true }]
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-0", "react", "flow"],
+      "plugins": [
+        "dynamic-import-node",
+        "transform-decorators-legacy",
+        ["babel-plugin-webpack-alias", { "config": "./webpack/webpack.config.client.js" }]
+      ]
+    }
+  }
+}

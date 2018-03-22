@@ -1,0 +1,27 @@
+{
+  "name": "react-enframr",
+  "version": "0.1.5",
+  "description": "A MERN boilerplate CLI tool",
+  "main": "index.js",
+  "repository": "https://github.com/rabidpug/react-enframr.git",
+  "author": "Matt Cuneo <m@jcuneo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "fs-extra": "^5.0.0",
+    "inquirer": "^5.1.0",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "bin": {
+    "enframr": "./build/index.js"
+  },
+  "scripts": {
+    "dev": "babel-node ./src/index.js",
+    "build": "babel ./src/index.js -o ./build/index.js && yarn publish"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
