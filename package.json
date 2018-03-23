@@ -1,6 +1,6 @@
 {
   "name": "react-enframr",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A MERN boilerplate CLI tool",
   "main": "index.js",
   "repository": "https://github.com/rabidpug/react-enframr.git",

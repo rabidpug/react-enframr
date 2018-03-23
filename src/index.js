@@ -73,7 +73,7 @@ function generateFiles(config) {
 function copyStructure(config) {
   console.log('copying project structure and example files to folder...');
   !fs.existsSync(config.path) && fs.mkdirSync(config.path);
-  const structurePath = path.resolve(__dirname, '../packageStructure');
+  const structurePath = path.resolve(__dirname, '../payload');
   fs.copySync(structurePath, config.path, { overwrite: true });
   console.log('...completed.');
 }
@@ -137,7 +137,7 @@ function initBP(name) {
 }
 
 program
-  .version('0.1.8')
+  .version('0.1.9')
   .arguments('<name>')
   .description('enter the name of the project you want to generate')
   .option('-c, --config', 'Customise package options for the project')
